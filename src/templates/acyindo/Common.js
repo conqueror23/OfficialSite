@@ -29,6 +29,7 @@ export const commonQuery = graphql`
                   date
                   path
                   author
+                  lang
                   thumbnail
                   cnContent
                   enContent

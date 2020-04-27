@@ -1,10 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import {ifEn} from '../langHelper'
 
 const Common = ({ data }) => {
     const content = data.markdownRemark
     console.log('content in acyasia here', content);
     // console.log('can i got the context here',context);
+    
+    const isEn=ifEn(content.frontmatter.lang);
     return (
         <div className='securites-wrapper'>
             <h1>acyasia</h1>
@@ -12,8 +15,7 @@ const Common = ({ data }) => {
             <div>
                 <img src={content.frontmatter.thumbnail} />
                 <h2>{content.frontmatter.title}</h2>
-                <p>{content.frontmatter.enContent}</p>
-                <p>{content.frontmatter.cnContent}</p>
+                <p>{isEn?content.frontmatter.enContent:content.frontmatter.cnContent}</p>
             </div>
         </div>
     )
@@ -30,6 +32,7 @@ export const commonQuery = graphql`
                   date
                   path
                   author
+                  lang
                   thumbnail
                   cnContent
                   enContent

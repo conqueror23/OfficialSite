@@ -22,6 +22,7 @@ exports.createPages = ({ actions, graphql }) => {
             edges {
               node {
                 frontmatter {
+                  lang
                   title
                   date
                   path
@@ -37,22 +38,22 @@ exports.createPages = ({ actions, graphql }) => {
     `).then(res => {
         if (res.errors) return Promise.reject(res.errors)
         res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-            const path = node.frontmatter.path
-            console.log('path in md files', path, path.includes('acyasia'));
-            if (path.includes('acyasia')) {
+            const url = node.frontmatter.path
+            console.log('path in md files', url, url.includes('acyasia'));
+            if (url.includes('acyasia')) {
                 createPage({
                     path: node.frontmatter.path,
                     component: acyasiaTemplate,
                     context:{
-                        pagePath:path
+                        pagePath:url
                     }
                 })
-            } else if (path.includes('acysecurities') === true) {
+            } else if (url.includes('acysecurities') === true) {
                 createPage({
                     path: node.frontmatter.path,
                     component: acysecuritiesTemplate,
                     context:{
-                        pagePath:path
+                        pagePath:url
                     } 
                 })
             } else {
@@ -60,7 +61,7 @@ exports.createPages = ({ actions, graphql }) => {
                     path: node.frontmatter.path,
                     component: acyindoTemplate,
                     context:{
-                        pagePath:path
+                        pagePath:url
                     }
                 })
             }

@@ -1,15 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-const Common = ({ data }) => {
+const Common = ({ data,context }) => {
     const content = data.markdownRemark
-    console.log('content in acyasia here', content);
+    
+    console.log('this in acyasia here', context);
+    // console.log('can we get context',context);
     return (
         <div className='asia-wrapper'>
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
-            <img src={content.frontmatter.thumbnail}/>
+            <img src={content.frontmatter.thumbnail} alt="img lost here"/>
                 <h2>{content.frontmatter.title}</h2>
                 <p>{content.frontmatter.enContent}</p>
                 <p>{content.frontmatter.cnContent}</p>
@@ -27,6 +29,7 @@ export const commonQuery = graphql`
                 title
                   date
                   path
+                  lang
                   author
                   thumbnail
                   cnContent

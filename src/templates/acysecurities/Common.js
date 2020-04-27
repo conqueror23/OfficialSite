@@ -1,13 +1,36 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
-export const Common = ({}) => {
-
+const  Common = ({ data }) => {
+    const content = data.markdownRemark
+    console.log('content in acyasia here', content);
     return (
-        <div>
-            <h1>acysecuritie</h1>
-            {console.log('google analytics for acysecurities')}
-            
-            
+        <div className='securites-wrapper'>
+            <h1>acyasia</h1>
+            {console.log('acyasia google analytics')}
+            <div>
+                <h2>{content.frontmatter.title}</h2>
+                <p>{content.frontmatter.enContent}</p>
+    <p>{content.frontmatter.cnContent}</p>
+            </div>
         </div>
     )
 }
+
+export default Common
+
+export const commonQuery = graphql`
+    query securitiesQuery ($path:String!){
+        markdownRemark(frontmatter: { path: { eq: $path } }) {
+            html
+            frontmatter{
+                title
+                  date
+                  path
+                  author
+                  cnContent
+                  enContent
+            }
+        }
+    }
+` 

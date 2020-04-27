@@ -36,13 +36,21 @@ exports.createPages = ({ actions, graphql }) => {
         res.data.allMarkdownRemark.edges.forEach(({ node }) => {
             const path = node.frontmatter.path
             console.log('path in md files', path, path.includes('acyasia'));
-
             if (path.includes('acyasia')) {
-                console.log('entering asia');
+                createPage({
+                    path: node.frontmatter.path,
+                    component: acyasiaTemplate,
+                })
             } else if (path.includes('acysecurities') === true) {
-                console.log('entering acysecurities');
+                createPage({
+                    path: node.frontmatter.path,
+                    component: acysecuritiesTemplate,
+                })
             } else {
-                console.log('entering acyindo');
+                createPage({
+                    path: node.frontmatter.path,
+                    component: acyindoTemplate,
+                })
             }
         })
     })

@@ -1,5 +1,5 @@
 import React from 'react'
-import Regulations from './Regulations'
+import Regulations from '../components/regulations'
 export const ragudis = ({data}) => {
     const content = data
     return (

@@ -9,9 +9,10 @@ const Common = ({ data }) => {
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
+            <img src={content.frontmatter.thumbnail}/>
                 <h2>{content.frontmatter.title}</h2>
                 <p>{content.frontmatter.enContent}</p>
-    <p>{content.frontmatter.cnContent}</p>
+                <p>{content.frontmatter.cnContent}</p>
             </div>
         </div>
     )
@@ -27,6 +28,7 @@ export const commonQuery = graphql`
                   date
                   path
                   author
+                  thumbnail
                   cnContent
                   enContent
             }

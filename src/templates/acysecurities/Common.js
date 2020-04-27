@@ -1,18 +1,19 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-const  Common = ({ data }) => {
+const Common = ({ data }) => {
     const content = data.markdownRemark
     console.log('content in acyasia here', content);
+    // console.log('can i got the context here',context);
     return (
         <div className='securites-wrapper'>
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
-                <img src={content.frontmatter.thumbnail}/>
+                <img src={content.frontmatter.thumbnail} />
                 <h2>{content.frontmatter.title}</h2>
                 <p>{content.frontmatter.enContent}</p>
-    <p>{content.frontmatter.cnContent}</p>
+                <p>{content.frontmatter.cnContent}</p>
             </div>
         </div>
     )

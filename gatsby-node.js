@@ -7,8 +7,11 @@
 // You can delete this file if you're not using it
 
 const path = require('path')
+
+
 exports.createPages = ({ actions, graphql }) => {
-    const { createPage } = actions;
+    const { createPage,createJobV2} = actions;
+   
     const acyasiaTemplate = path.resolve('src/templates/acyasia/Common.js')
     const acyindoTemplate = path.resolve('src/templates/acyindo/Common.js')
     const acysecuritiesTemplate = path.resolve('src/templates/acysecurities/Common.js')
@@ -40,16 +43,25 @@ exports.createPages = ({ actions, graphql }) => {
                 createPage({
                     path: node.frontmatter.path,
                     component: acyasiaTemplate,
+                    context:{
+                        pagePath:path
+                    }
                 })
             } else if (path.includes('acysecurities') === true) {
                 createPage({
                     path: node.frontmatter.path,
                     component: acysecuritiesTemplate,
+                    context:{
+                        pagePath:path
+                    } 
                 })
             } else {
                 createPage({
                     path: node.frontmatter.path,
                     component: acyindoTemplate,
+                    context:{
+                        pagePath:path
+                    }
                 })
             }
         })

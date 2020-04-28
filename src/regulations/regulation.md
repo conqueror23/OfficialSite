@@ -1,5 +1,5 @@
 ---
-    path: "/aisc-cn"
+    path: "/regulations"
     title: "aisc"
     date : "2020-04-22"
     author : "sally"

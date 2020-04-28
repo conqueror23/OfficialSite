@@ -1,12 +1,33 @@
-import React from 'react'
+import React from "react"
+import { useStaticQuery,graphql } from "gatsby"
 
-const regulations = (lang) => {
-    return (
-        <div>
-           {lang} version of regulations is here 
-        </div>
-    )
+const Regulations = ({lang}) => { 
+    const data = useStaticQuery(graphql `
+    query allData {
+        allMarkdownRemark(filter: {frontmatter: {path: {eq: "/regulations"}}}) {
+          edges {
+            node {
+              id
+              frontmatter {
+                aiscCn
+                aiscEn
+                vsfcCn
+                vsfcEn
+              }
+            }
+          }
+        }
+      }
+    `)
+  const regulation = data.allMarkdownRemark.edges[0].node.frontmatter
+  console.log("allData", lang)
+  return (
+    <div>
+      {lang==='en'?regulation.aiscEn:regulation.aiscCn}
+        
+    </div>
+  )
 }
 
 
-export default regulations
+export default Regulations

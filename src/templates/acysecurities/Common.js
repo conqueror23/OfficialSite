@@ -5,7 +5,6 @@ import {ifEn} from '../langHelper'
 const Common = ({ data }) => {
     const content = data.markdownRemark
     console.log('content in acyasia here', content);
-    // console.log('can i got the context here',context);
     
     const isEn=ifEn(content.frontmatter.lang);
     return (
@@ -13,7 +12,7 @@ const Common = ({ data }) => {
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
-                <img src={content.frontmatter.thumbnail} />
+                <img src={content.frontmatter.thumbnail} alt="img lost"/>
                 <h2>{content.frontmatter.title}</h2>
                 <p>{isEn?content.frontmatter.enContent:content.frontmatter.cnContent}</p>
             </div>

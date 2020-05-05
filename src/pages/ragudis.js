@@ -1,6 +1,6 @@
 import React from 'react'
 import Regulations from '../components/regulations'
-export const ragudis = ({data}) => {
+ const ragudis = ({data}) => {
     const content = data
     return (
         <div>
@@ -8,3 +8,4 @@ export const ragudis = ({data}) => {
         </div>
     )
 }
+export default ragudis

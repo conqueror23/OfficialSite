@@ -9,7 +9,7 @@ const  Common = ({ data }) => {
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
-            <img src={content.frontmatter.thumbnail}/>
+            <img src={content.frontmatter.thumbnail} alt="img lost"/>
                 <h2>{content.frontmatter.title}</h2>
                 <p>{content.frontmatter.enContent}</p>
                 <p>{content.frontmatter.cnContent}</p>

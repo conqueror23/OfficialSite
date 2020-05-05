@@ -4,7 +4,7 @@ import Regulations from '../components/Regulations'
     const content = data
     return (
         <div>
-            <Regulations lang={'cn'} />
+            {/* <Regulations lang={'cn'} /> */}
             {/* Empty here */}
         </div>
     )

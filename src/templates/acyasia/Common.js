@@ -11,7 +11,7 @@ const Common = ({ data,context }) => {
         <div className='asia-wrapper'>
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
-            <div>
+            <div className='body-wrapper'>
                 <div className="regulation-wrapper">
                     <h2>Regulation part</h2>
                     <Regulations lang='zh'/>

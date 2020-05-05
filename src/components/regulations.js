@@ -4,27 +4,36 @@ import { useStaticQuery,graphql } from "gatsby"
 const Regulations = ({lang}) => { 
     const data = useStaticQuery(graphql `
     query allData {
-        allMarkdownRemark(filter: {frontmatter: {path: {eq: "/regulations"}}}) {
+        allMarkdownRemark(filter: {frontmatter: {path: {eq: "/regulations"} , aisc: {}}}) {
           edges {
             node {
-              id
-              frontmatter {
-                aiscCn
-                aiscEn
-                vsfcCn
-                vsfcEn
+                id
+                frontmatter {
+                  title
+                  path
+                  tile
+                  thumbnail
+                  lang
+                  aisc {
+                    en
+                    cn
+                  }
+                  vsfc {
+                    en
+                    cn
+                  }
+                }
               }
-            }
           }
         }
       }
     `)
+  const standard ='aisc';
   const regulation = data.allMarkdownRemark.edges[0].node.frontmatter
-  console.log("allData", lang)
+
   return (
     <div>
-      {lang==='en'?regulation.aiscEn:regulation.aiscCn}
-        
+      {regulation[standard][lang]}
     </div>
   )
 }

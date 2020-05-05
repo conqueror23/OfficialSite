@@ -1,17 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Regulations from '../../components/Regulations'
+import './asia.css'
 const Common = ({ data,context }) => {
     const content = data.markdownRemark
     
-    console.log('this in acyasia here', context);
+    console.log('this in acyasia here', Regulations);
     // console.log('can we get context',context);
     return (
         <div className='asia-wrapper'>
             <h1>acyasia</h1>
             {console.log('acyasia google analytics')}
             <div>
-            <img src={content.frontmatter.thumbnail} alt="img lost here"/>
+                <div className="regulation-wrapper">
+                    <h2>Regulation part</h2>
+                    <Regulations lang='zh'/>
+                </div>
                 <h2>{content.frontmatter.title}</h2>
                 <p>{content.frontmatter.enContent}</p>
                 <p>{content.frontmatter.cnContent}</p>

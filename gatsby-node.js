@@ -97,3 +97,16 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     })
 
 }
+// exports.createWrite =({data})=>{
+//     data.forEach(record =>{
+//         const node = {
+//             name:record.name,
+//             id:createNodeId(`data-${record.name}`),
+//             internal:{
+//                 type:"WriteData",
+//                 contentDigest:createContentDigest(data)
+//             },
+//         }
+//         actions.createNode(node)
+//     })    
+// }

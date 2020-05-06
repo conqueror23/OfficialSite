@@ -5,7 +5,7 @@ import './securities.css'
 import Regulations from '../../components/Regulations'
 const Common = ({ data }) => {
     const content = data.markdownRemark
-    console.log('content in acyasia here', content);
+    // console.log('content in acyasia here', content);
     // console.log('can i got the context here',context);
    
     const isEn=ifEn(content.frontmatter.lang);

@@ -4,9 +4,8 @@ import Regulations from '../../components/Regulations'
 import './asia.css'
 const Common = ({ data,context }) => {
     const content = data.markdownRemark
-    
     console.log('this in acyasia here', Regulations);
-    // console.log('can we get context',context);
+
     return (
         <div className='asia-wrapper'>
             <h1>acyasia</h1>

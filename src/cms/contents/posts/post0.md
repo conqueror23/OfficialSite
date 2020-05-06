@@ -1,5 +1,5 @@
 ---
-url : `cms/post1`
+path : "/cms/post1"
 title : "manulaly gernerate md"
 author: "bruce in local vscode"
 date: "200203"

@@ -12,7 +12,7 @@ backend:
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
       editor:
-       preview: false
+       preview: true
       fields:
         - { label: "path", name: "path", widget: "string" }
         - { label: "Title", name: "title", widget: "string" }

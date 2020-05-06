@@ -1,6 +1,6 @@
 ---
 path : "/acyasia/int"
-tile :  "au version of the asia template"
+title :  "au version of the asia template"
 date: "2020-04-23"
 author : "bruce"
 lang: "cn"

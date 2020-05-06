@@ -1,6 +1,6 @@
 ---
 path : "/acysecurities/au"
-tile :  "au version of the template"
+title :  "au version of the template"
 date: "2020-04-23"
 author : "bruce"
 lang : "en"

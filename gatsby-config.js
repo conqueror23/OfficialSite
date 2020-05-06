@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `cmsPosts`,
-        path: `${__dirname}/src/contents/posts`,
+        path: `${__dirname}/src/cms/contents/posts`,
       },
     },
 

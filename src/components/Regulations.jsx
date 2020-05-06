@@ -11,7 +11,7 @@ const Regulations = ({lang}) => {
                 frontmatter {
                   title
                   path
-                  tile
+                  title
                   thumbnail
                   lang
                   aisc {

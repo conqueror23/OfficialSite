@@ -28,6 +28,14 @@ module.exports = {
         path: `${__dirname}/src/contents`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cmsPosts`,
+        path: `${__dirname}/src/contents/posts`,
+      },
+    },
+
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-catch-links`,

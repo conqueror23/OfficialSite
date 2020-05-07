@@ -35,7 +35,6 @@ module.exports = {
         path: `${__dirname}/src/cms/contents/posts`,
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-catch-links`,

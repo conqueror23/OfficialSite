@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
-  repo: wayneborong/OfficialSite
+  repo: conqueror23/OfficialSite
 
 media_folder: static/img
 public_folder: contents

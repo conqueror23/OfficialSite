@@ -1,0 +1,24 @@
+backend:
+  name: github
+  branch: master
+  repo: conqueror23/OfficialSite
+
+media_folder: static/img
+public_folder: contents
+  
+collections:
+  - name: "post"
+    label: "Posts"
+    folder: "src/cms/contents/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: true
+    fields:
+      - { label: "path", name: "path", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "datetime" }
+      - { label: "author", name: "author", widget: "string" }
+      - { label: "thumbnail", name: "thumbnail", widget: "markdown" }
+      - { label: "cnContent", name: "mainContent", widget: "markdown" }
+      - { label: "enContent", name: "mainContent", widget: "markdown" }

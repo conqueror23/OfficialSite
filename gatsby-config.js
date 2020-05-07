@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +26,13 @@ module.exports = {
       options: {
         name: `contents`,
         path: `${__dirname}/src/contents`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cmsPosts`,
+        path: `${__dirname}/src/cms/contents/posts`,
       },
     },
     `gatsby-transformer-sharp`,

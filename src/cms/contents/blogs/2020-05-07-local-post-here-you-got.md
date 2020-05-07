@@ -1,5 +1,5 @@
 ---
-path: /src/cms/newpost1
+path: /acyasia/cms/en/newpost1
 title: Local Post here You got
 date: 2020-05-07T07:31:38.954Z
 author: Local Bruce

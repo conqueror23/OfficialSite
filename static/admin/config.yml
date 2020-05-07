@@ -22,7 +22,7 @@ collections:
       - { label: "thumbnail", name: "thumbnail", widget: "markdown" }
       - { label: "cnContent", name: "cnContent", widget: "markdown" }
       - { label: "enContent", name: "enContent", widget: "markdown" }
-- name: "blog"
+  - name: "blog"
     label: "Blogs"
     folder: "src/cms/contents/blogs"
     create: true

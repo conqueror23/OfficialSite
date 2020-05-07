@@ -4,7 +4,7 @@ backend:
   repo: conqueror23/OfficialSite
 
 media_folder: static/img
-public_folder: contents
+public_folder: src/cms/contents
   
 collections:
   - name: "post"

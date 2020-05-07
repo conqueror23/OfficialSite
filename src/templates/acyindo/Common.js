@@ -3,8 +3,6 @@ import { graphql } from 'gatsby'
 import Regulations from '../../components/Regulations'
 const  Common = ({ data }) => {
     const content = data.markdownRemark
-    // console.log('content in acyasia here', content);
-    // console.log('can we get the data here',commonQuery)
     return (
         <div className='indo-wrapper'>
             <h1>acyasia</h1>

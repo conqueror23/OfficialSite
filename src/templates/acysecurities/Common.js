@@ -16,7 +16,7 @@ const Common = ({ data }) => {
                     <h2>Regulation part</h2>
                     <Regulations lang="en"/>
                 </div>
-                <img src={content.frontmatter.thumbnail} />
+                <img src={content.frontmatter.thumbnail} alt="img lost" />
                 <h2>{content.frontmatter.title}</h2>
                 <p>{isEn?content.frontmatter.enContent:content.frontmatter.cnContent}</p>
             </div>

@@ -1,5 +1,5 @@
 ---
-path: /cms/acyindo/en/blog1
+path: /acyindo/cms/en/blog1
 title: Blog 1 in acy indo and lets see where it went to
 date: 2020-05-07T06:46:52.359Z
 author: Bruce after a day

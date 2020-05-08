@@ -1,5 +1,5 @@
 ---
-path: /cms/acysecurities/au/firstpost
+path: /acysecurities/cms/au/post1
 title: Did we triggered the build process in netilfy?
 date: 2020-05-07T05:58:14.645Z
 author: The Only Bruce

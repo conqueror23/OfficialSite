@@ -1,5 +1,5 @@
 ---
-path: /src/cms/newpost1
+path: /src/cms/newPostHere
 title: The First Post 2
 date: 2020-05-07T07:31:38.954Z
 author: Local Bruce

@@ -1,5 +1,5 @@
 ---
-path: /acyindo/en/Post1
+path: /acyindo/en/Post1Page
 title: This is the first Post in my local Repos
 date: 2020-05-06T22:38:02.315Z
 author: Still Bruce

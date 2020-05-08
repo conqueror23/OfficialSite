@@ -1,5 +1,5 @@
 ---
-path : "/cms/acyasia/post1"
+path : /cms/acyasia/postParaHere
 title : "manulaly gernerate md"
 author: "bruce in local vscode"
 date: "200203"

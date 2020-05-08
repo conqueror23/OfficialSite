@@ -10,8 +10,8 @@ module.exports = {
       resolve :`gatsby-plugin-netlify-cms`,
 
       options:{
-        modulePath:`src/settings/config.js`,
-        stylesPath:`src/styles/`
+        modulePath:`${__dirname}/src/cms/settings/config.js`,
+        stylesPath:`${__dirname}/src/styles/`
       }
     },
     {
@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `cmsPosts`,
-        path: `${__dirname}/src/cms/contents/posts`,
+        path: `${__dirname}/src/cms/contents/`,
       },
     },
     `gatsby-transformer-sharp`,

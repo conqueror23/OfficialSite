@@ -39,7 +39,6 @@ exports.createPages = ({ actions, graphql }) => {
         if (res.errors) return Promise.reject(res.errors)
         res.data.allMarkdownRemark.edges.forEach(({ node }) => {
             const url = node.frontmatter.path
-            console.log('do we have more paths',url);
             if (url.includes('acyasia')) {
                 createPage({
                     path: node.frontmatter.path,

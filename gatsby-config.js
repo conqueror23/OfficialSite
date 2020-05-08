@@ -8,10 +8,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       resolve :`gatsby-plugin-netlify-cms`,
-
       options:{
-        modulePath:`${__dirname}/src/cms/settings/config.js`,
-        stylesPath:`${__dirname}/src/styles/`
+        // modulePath:`${__dirname}/src/cms/settings/`,
       }
     },
     {

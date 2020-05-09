@@ -1,4 +1,4 @@
-import CMS from "netlify-cms-app"
+import CMS from "netlify-cms"
 
 import Asia from "../../templates/acyasia/Common"
 import Indo from "../../templates/acyindo/Common"

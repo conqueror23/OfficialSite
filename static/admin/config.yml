@@ -52,3 +52,14 @@ collections:
       - { label: "thumbnail", name: "thumbnail", widget: "markdown" }
       - { label: "cnContent", name: "cnContent", widget: "markdown" }
       - { label: "enContent", name: "enContent", widget: "markdown" }
+  - name: "settings"
+    label: "settings"
+    folder: "src/cms/settings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "path", name: "path", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "datetime" }

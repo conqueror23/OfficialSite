@@ -13,6 +13,17 @@ module.exports = {
       }
     },
     {
+      resolve:`gatsby-source-gitdiff`,
+      options:{
+        diffFilter:`ADM`,
+        dateFormat:`MMM DD,YYYY-h:mm a`,
+        ignore:{
+          firstCommit: false,
+          exts:['png,jpeg,jpg'],
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

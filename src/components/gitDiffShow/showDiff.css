@@ -1,0 +1,11 @@
+.showdiff-wrapper{
+    display: flex;
+    flex-direction: column;
+    border:1px solid grey;
+}
+.showdiff-wrapper .showdiff-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}

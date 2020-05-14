@@ -19,7 +19,7 @@ module.exports = {
         dateFormat:`MMM DD,YYYY-h:mm a`,
         ignore:{
           firstCommit: false,
-          exts:['png,jpeg,jpg'],
+          exts:['png','jpeg','tsx','jsx','jpg'],
         }
       }
     },

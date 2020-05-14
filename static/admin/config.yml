@@ -1,13 +1,7 @@
 backend:
-  name: gitlab
+  name: github
   branch: master
-  # setting for gitlab
-  repo: bruce.wang/OfficialSiteNetlifyCMS
-  auth_type: implicit
-  app_id: 4ae72c5110c10a90fbed6af2de61a8b4c3a82237091ff9f1139b4f1b7f4d8580
-  api_root : http://c7git.acy.svr/api/v4
-  base_url: http://c7git.acy.svr/
-  auth_endpoint: oauth/authorize
+  repo: conqueror23/OfficialSite
 
 media_folder: static/img
 public_folder: src/cms/contents

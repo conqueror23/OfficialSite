@@ -13,11 +13,6 @@ export const formatChangeBody =(changebody)=>{
     return recordArray
 }
 export const formatChanges =(changes)=>{
-    let changeBody;
-    if(changes[0].includes('---')){
-        changeBody = changes[0].split('---')[1];
-    }else{
-        changeBody = changes[0];
-    }
+    const changeBody = changes[0].replace('---',);
     return formatChangeBody(changeBody)
 }

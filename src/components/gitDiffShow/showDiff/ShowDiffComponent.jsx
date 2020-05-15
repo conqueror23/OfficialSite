@@ -14,7 +14,8 @@ const ShowDiffComponent = ({ record }) => {
       <div className='showdiff-commit-block'>
         <p>Changes</p>
         {files && files.length > 0 ? (
-            files.map((change,index)=>{
+          files.map((change,index)=>{
+            console.log('show change before block',change)
                 return (
                     <CommitBlock change={change} key={index} />
                 )

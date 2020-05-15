@@ -17,7 +17,7 @@ module.exports = {
       options:{
         diffFilter:`ADM`,
         dateFormat:`MMM DD,YYYY-h:mm a`,
-        targetDirectory:`src/contents`,
+        targetDirectory:`src/cms/contents`,
         ignore:{
           firstCommit: false,
           exts:['png','jpeg','tsx','jsx','jpg'],

@@ -7,5 +7,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
+}
+.showdiff-commit-block{
+    border: 1px solid gray;
+    margin-bottom: 10px;
 }

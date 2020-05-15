@@ -1,0 +1,13 @@
+.new-version, .old-version, .unChangedVersion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.new-version {
+    background-color:greenyellow;
+}
+.old-version{
+    background-color: pink;
+}

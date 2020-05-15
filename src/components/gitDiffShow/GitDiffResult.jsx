@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import ShowDiffComponent from './ShowDiffComponent'
-
+import ShowDiffComponent from './showDiff/ShowDiffComponent'
+import './gitDiffResult.css'
 
 const GitDiffResult = () => {
   const gitDiff = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ const GitDiffResult = () => {
   const diffs = gitDiff.allGitDiffCommit.edges
 if(diffs.length>0){
     return (
-        <div>
+        <div className='getdiff-wrapper'>
             {
                 diffs.map((record,index)=>{
                     return (

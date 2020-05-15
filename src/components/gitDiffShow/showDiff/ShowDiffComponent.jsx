@@ -1,17 +1,17 @@
 import React from "react"
-import './showDiff.css'
-import CommitBlock from "./CommitBlock"
+import './showDiffComponent.css'
+import CommitBlock from "../commitBlock/CommitBlock"
 
 const ShowDiffComponent = ({ record }) => {
   const { commit, date, files, id } = record
   return (
     <div className='showdiff-wrapper'>
         <div className='showdiff-header'>
-        <h3>Commit: {commit}</h3>
+        <p>Commit: {commit}</p>
       <p>{date}</p>
       <p>{id}</p>
         </div>
-      <div>
+      <div className='showdiff-commit-block'>
         <p>Changes</p>
         {files && files.length > 0 ? (
             files.map((change,index)=>{
